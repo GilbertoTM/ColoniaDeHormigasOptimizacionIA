@@ -35,5 +35,5 @@ else:
     camino, distancia = colonia.correr(indice_inicial, indice_destino)
 
     # Mostrar el camino más corto
-    ciudades_camino = [ciudades[indice_inicial] for indice_destino in camino]
+    ciudades_camino = [ciudades[tupla[1]] for tupla in camino]
     print(f"El camino más corto de {ciudad_inicial} a {ciudad_destino} es: {' -> '.join(ciudades_camino)} (distancia: {distancia})")
